@@ -24,6 +24,7 @@ RUN mv data /data \
 VOLUME /data
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh
+COPY neo4j-spatial-0.24-neo4j-3.1.1-server-plugin.jar /var/lib/neo4j/plugins
 
 RUN chmod +x /docker-entrypoint.sh
 
